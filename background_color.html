@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #dark, #light, #pink, #blue, #red{
+        padding: 20px;
+        font-size: 25px;
+        border-radius: 50px;
+        background-color: rgb(146, 129, 134);
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <button id="dark" onclick="themeChanger('dark')">Dark<br> Mode</button>
+    <button id="light" onclick="themeChanger('light')">Light<br> Mode</button>
+    <button id="pink" onclick="themeChanger('pink')">Pink<br> Mode</button>
+    <button id="blue" onclick="themeChanger('blue')">Blue<br>Mode</button>
+    <button id="red" onclick="themeChanger('red')">Red<br> Mode</button>
+    </center>
+
+    <div id="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nisi maiores dolorem voluptatibus dolor autem aliquam, 
+            blanditiis minima iure ipsam hic rerum delectus temporibus numquam. 
+            Veritatis expedita nihil sequi provident odit quas, illum dignissimos 
+            dolor reprehenderit, neque porro sint doloribus necessitatibus atque 
+            fugit perferendis eius rem totam! Quos distinctio dolorem maiores!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nisi maiores dolorem voluptatibus dolor autem aliquam, 
+            blanditiis minima iure ipsam hic rerum delectus temporibus numquam. 
+            Veritatis expedita nihil sequi provident odit quas, illum dignissimos 
+            dolor reprehenderit, neque porro sint doloribus necessitatibus atque 
+            fugit perferendis eius rem totam! Quos distinctio dolorem maiores!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nisi maiores dolorem voluptatibus dolor autem aliquam, 
+            blanditiis minima iure ipsam hic rerum delectus temporibus numquam. 
+            Veritatis expedita nihil sequi provident odit quas, illum dignissimos 
+            dolor reprehenderit, neque porro sint doloribus necessitatibus atque 
+            fugit perferendis eius rem totam! Quos distinctio dolorem maiores!
+        </p>
+
+    </div>
+
+
+    <script>
+        // function darkmode() {
+        //     document.body.style.backgroundColor = 'black'
+        // }
+
+        // function lightmode() {
+        //     document.body.style.backgroundColor = 'cyan'
+        // }
+
+        function themeChanger(mode) {
+            if (mode === 'dark') {
+                document.body.style.background = 'black'
+                document.getElementById('container').style.color = 'white'
+            }
+            else if (mode === 'red') {
+                document.body.style.background = 'red'
+                document.getElementById('container').style.color = 'white'
+            }
+            else if (mode === 'pink') {
+                document.body.style.background = 'pink'
+                document.getElementById('container').style.color = 'black'
+            }
+            else if (mode === 'light') {
+                document.body.style.background = 'white'
+                document.getElementById('container').style.color = 'black'
+            }
+            else if (mode === 'blue') {
+                document.body.style.background = 'blue'
+                document.getElementById('container').style.color = 'white'
+            }
+        }
+    </script>
+</body>
+</html>
